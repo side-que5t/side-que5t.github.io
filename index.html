@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIDE-QUEST — Discover Communities & IRL Moments</title>
+  <meta name="description" content="Side-Quest helps you discover, join, and manage communities and IRL events in your city."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(to right, #ec4899, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-white antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-extrabold">SIDE-QUEST</h1>
+      <nav class="hidden md:flex gap-8 text-sm">
+        <a href="#about" class="hover:text-fuchsia-400">About</a>
+        <a href="#features" class="hover:text-fuchsia-400">Features</a>
+        <a href="#how" class="hover:text-fuchsia-400">How it Works</a>
+        <a href="#contact" class="hover:text-fuchsia-400">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-block bg-fuchsia-500 px-4 py-2 rounded-lg font-semibold hover:bg-fuchsia-600">
+        Join Waitlist
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-24 px-6">
+    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">
+      Not the main quest.<br/>
+      <span class="gradient-text">The fun one.</span>
+    </h2>
+    <p class="mt-6 text-slate-300 max-w-2xl mx-auto">
+      Discover curated communities, join limited-slot events, and find your tribe — all in one place.
+    </p>
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="#contact" class="bg-fuchsia-500 px-6 py-3 rounded-xl font-semibold hover:bg-fuchsia-600">Get Early Access</a>
+      <a href="#features" class="border border-white/20 px-6 py-3 rounded-xl font-semibold hover:bg-white/10">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-slate-900/40 border-y border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold">What is SIDE-QUEST?</h3>
+      <p class="mt-4 text-slate-300">
+        SIDE-QUEST is your gateway to unique communities and IRL experiences. 
+        From fitness groups to book clubs, from supper tables to gaming nights — 
+        we bring together the side stories of life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 px-6 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center">Why Choose SIDE-QUEST?</h3>
+    <div class="mt-12 grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-white/10">
+        <h4 class="font-bold text-xl">🎯 Curated Communities</h4>
+        <p class="mt-3 text-slate-300">Handpicked communities you actually want to join.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-white/10">
+        <h4 class="font-bold text-xl">⏳ Limited Slots</h4>
+        <p class="mt-3 text-slate-300">FOMO meets exclusivity — only a few seats, act fast.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-white/10">
+        <h4 class="font-bold text-xl">⚡ Simple & Social</h4>
+        <p class="mt-3 text-slate-300">No spam, no clutter — just real connections.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how" class="py-20 px-6 bg-slate-900/40 border-y border-white/10">
+    <h3 class="text-3xl font-bold text-center">How it Works</h3>
+    <div class="mt-12 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="text-center">
+        <div class="text-5xl font-extrabold gradient-text">1</div>
+        <h4 class="mt-3 font-bold">Discover</h4>
+        <p class="mt-2 text-slate-300">Browse trending communities & local meetups.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl font-extrabold gradient-text">2</div>
+        <h4 class="mt-3 font-bold">Join</h4>
+        <p class="mt-2 text-slate-300">Request limited slots & get approved by hosts.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl font-extrabold gradient-text">3</div>
+        <h4 class="mt-3 font-bold">Connect</h4>
+        <p class="mt-2 text-slate-300">Meet IRL, enjoy the vibes, and belong.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="py-20 px-6 text-center">
+    <h3 class="text-3xl font-bold">Be part of the first SIDE-QUEST adventures 🚀</h3>
+    <p class="mt-4 text-slate-300">Sign up today and get notified when we launch.</p>
+    <form class="mt-8 max-w-md mx-auto flex">
+      <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-l-xl bg-slate-900 border border-white/20 text-white focus:outline-none" required>
+      <button type="submit" class="bg-fuchsia-500 px-6 rounded-r-xl hover:bg-fuchsia-600">Join</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-slate-400 text-sm border-t border-white/10">
+    © 2025 SIDE-QUEST. All rights reserved.
+  </footer>
+
+</body>
+</html>
