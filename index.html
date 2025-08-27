@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SIDE-QUEST: Discover Communities & IRL Moments</title>
+  <title>SIDE-QUEST</title>
   <meta name="description" content="Side-Quest helps you discover, join, and manage communities and IRL events in your city."/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -15,6 +15,8 @@
       -webkit-text-fill-color: transparent;
     }
   </style>
+  <!-- Heroicons CDN for social icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="bg-slate-950 text-white antialiased">
 
@@ -113,9 +115,28 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-6 text-center text-slate-400 text-sm border-t border-white/10">
-    © 2025 SIDE-QUEST. All rights reserved.
+  <footer class="py-10 text-center border-t border-white/10 bg-slate-950">
+    <div class="flex justify-center gap-6 mb-4">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/side.que5t" target="_blank" class="hover:text-fuchsia-400">
+        <i data-feather="instagram"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/company/side.que5t" target="_blank" class="hover:text-fuchsia-400">
+        <i data-feather="linkedin"></i>
+      </a>
+      <!-- Email -->
+      <a href="mailto:thesidequestapp@gmail.com" class="hover:text-fuchsia-400">
+        <i data-feather="mail"></i>
+      </a>
+    </div>
+    <p class="text-slate-400 text-sm">© 2025 SIDE-QUEST. All rights reserved.</p>
+    <div class="mt-2 text-slate-500 text-xs">
+      <a href="#" class="hover:text-fuchsia-400">Privacy Policy</a> · 
+      <a href="#" class="hover:text-fuchsia-400">Terms of Service</a>
+    </div>
   </footer>
 
+  <script>feather.replace()</script>
 </body>
 </html>
