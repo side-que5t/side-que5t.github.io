@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SIDE-QUEST</title>
+  <title>SIDE-QUEST: Discover Communities & IRL Moments</title>
   <meta name="description" content="Side-Quest helps you discover, join, and manage communities and IRL events in your city."/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Favicon (uses SQ). Swap the path to your file if needed -->
+  <link rel="icon" type="image/png" href="assets/logo-sq.png" />
   <style>
     body { font-family: 'Inter', sans-serif; }
     .gradient-text {
@@ -15,7 +17,7 @@
       -webkit-text-fill-color: transparent;
     }
   </style>
-  <!-- Heroicons CDN for social icons -->
+  <!-- Feather icons for social -->
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="bg-slate-950 text-white antialiased">
@@ -23,7 +25,22 @@
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-white/10">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-extrabold">SIDE-QUEST</h1>
+      <!-- Brand: Full wordmark on md+, SQ fallback on xs/sm -->
+      <a href="#" class="flex items-center gap-3">
+        <!-- Full word logo (desktop/tablet) -->
+        <img
+          src="assets/logo-full.svg"
+          alt="SIDE-QUEST"
+          class="hidden sm:block h-8 w-auto"
+        />
+        <!-- SQ fallback (very small screens) -->
+        <img
+          src="assets/logo-sq.svg"
+          alt="SQ"
+          class="block sm:hidden h-8 w-8"
+        />
+      </a>
+
       <nav class="hidden md:flex gap-8 text-sm">
         <a href="#about" class="hover:text-fuchsia-400">About</a>
         <a href="#features" class="hover:text-fuchsia-400">Features</a>
@@ -116,24 +133,34 @@
 
   <!-- Footer -->
   <footer class="py-10 text-center border-t border-white/10 bg-slate-950">
-    <div class="flex justify-center gap-6 mb-4">
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/side.que5t" target="_blank" class="hover:text-fuchsia-400">
-        <i data-feather="instagram"></i>
-      </a>
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/company/side.que5t" target="_blank" class="hover:text-fuchsia-400">
-        <i data-feather="linkedin"></i>
-      </a>
-      <!-- Email -->
-      <a href="mailto:thesidequestapp@gmail.com" class="hover:text-fuchsia-400">
-        <i data-feather="mail"></i>
-      </a>
-    </div>
-    <p class="text-slate-400 text-sm">© 2025 SIDE-QUEST. All rights reserved.</p>
-    <div class="mt-2 text-slate-500 text-xs">
-      <a href="#" class="hover:text-fuchsia-400">Privacy Policy</a> · 
-      <a href="#" class="hover:text-fuchsia-400">Terms of Service</a>
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Row: SQ + Socials -->
+      <div class="flex items-center justify-center gap-6 mb-5">
+        <!-- SQ mark (visible and proud) -->
+        <img
+          src="assets/logo-sq.svg"
+          alt="SQ"
+          class="h-8 w-8 md:h-10 md:w-10"
+        />
+        <!-- Social icons -->
+        <div class="flex items-center gap-6">
+          <a href="https://instagram.com/yourhandle" target="_blank" class="hover:text-fuchsia-400" aria-label="Instagram">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="https://linkedin.com/company/yourhandle" target="_blank" class="hover:text-fuchsia-400" aria-label="LinkedIn">
+            <i data-feather="linkedin"></i>
+          </a>
+          <a href="mailto:hello@side-quest.in" class="hover:text-fuchsia-400" aria-label="Email">
+            <i data-feather="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-slate-400 text-sm">© 2025 SIDE-QUEST. All rights reserved.</p>
+      <div class="mt-2 text-slate-500 text-xs">
+        <a href="#" class="hover:text-fuchsia-400">Privacy Policy</a> · 
+        <a href="#" class="hover:text-fuchsia-400">Terms of Service</a>
+      </div>
     </div>
   </footer>
 
